@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(252, 166, 201);
+    margin: 0em 38%;
+    text-align: center;
+    }
+
+header{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+header:hover{
+    color: black;
+}
+.opener{
+    color: white;
+}
+ol {
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.quote h1 {
+    margin: 0em 15%;
+    color: white;
+}
+img{
+    width: 35%;
+    height: 35%;
+    object-fit: contain;
+}
+
+
+
+
+
