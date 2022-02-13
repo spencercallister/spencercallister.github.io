@@ -1,0 +1,19 @@
+section{
+    text-align: center;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px;
+}
+body{
+    max-width: 1000px;
+}
+.button-box{
+    text-align: center;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 8px 15px;
+}
