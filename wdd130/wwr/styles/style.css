@@ -56,8 +56,8 @@ nav a:hover{
     text-align: center;
 }
 .home-grid {
-display: grid;
-grid-template-columns: repeat(10,1fr);
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
 }
 main section{
     text-align: center;
