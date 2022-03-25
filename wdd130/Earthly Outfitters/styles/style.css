@@ -2,10 +2,14 @@
     max-width:1600px;
     margin:0 auto;
 }
+img{
+    width:100%;
+}
 header {
     display: grid;
     grid-template-columns: 150px auto;
     background-color: #E07A5F;
+    
 }
 nav{
     display: flex;
@@ -13,7 +17,7 @@ nav{
 }
 nav a {
     text-align: center;
-    color: #424B54;
+    color: #F4F1DE;
     text-decoration: none;
     padding:35px;
 }
@@ -22,17 +26,225 @@ nav a:hover{
     color: #E07A5F;
 }
 #logo_link {
-    padding-top: 5px;
     justify-self: center;
     align-self: center;
+    margin-bottom: -50px;
 }
 #hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     margin-top: -100px;
 }
+#hero img{
+    height:700px;
+    width: 100%;
+}
 #hero-box {
     grid-column: 1/4;
     grid-row: 1/3;
     z-index: -1;
+}
+.home-title{
+    color: #188B7D;
+    font-family: "dancing script";
+    font-size: 2em;
+    margin-top: 180px;
+    font-weight: b;
+}
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+#hero-msg h1{
+    text-align: center;
+}
+.button-box {
+    text-align: center;
+}
+.trade_button{
+    background-color: #424B54;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    padding:15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.trade_button:hover{
+    background-color: #F4F1DE;
+    color: #E07A5F;
+    font-weight: bold;
+}
+body {
+    background-color: white;
+    font-family: "open Sans", Helvetica, sans-serif;
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+}
+.main-msg{
+  text-align: center;
+  width: 70%;
+  margin: 50px auto;
+  border: 3px solid #188B7D;
+  padding: 20px 100px;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.slideshow-container img{
+  width:100%;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  bottom: 8px;
+  position:relative;
+  text-align: center;
+  background-color: #E07A5F;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  margin-top: -50px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* End of slide show*/
+.types{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+  margin: 50px 100px;
+}
+
+.types a{
+  font-family: "dancing script";
+  color: #424B54;
+  text-decoration:none;
+}
+.types a:hover{
+  text-decoration: underline;
+}
+.types h3{
+  margin-top: 0px;
+}
+.types img:hover{
+  box-shadow: 5px 5px 10px #424B54;
+}
+
+.types img{
+  border-radius: 50%;
+  width:75%;
+  height: 100%;
+  border: 7px solid #188B7D;
+}
+
+.we_help{
+  margin: 120px 150px 0px 150px;
+  
+}
+.we_help h2{
+  font-family: "dancing script";
+  color: #188B7D;
+}
+footer{
+  background-color: #E07A5F;
+  padding:0px 50px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #F4F1DE;
+}
+.copy-right{
+  display:flex;
+}
+footer .social img{
+  width: 30%;
+}
+
+footer h3 a:hover{
+  text-decoration: underline;
+}
+footer a{
+  color: #424B54;
+  text-decoration: none;
+}
+.copy-right h3:nth-of-type(1){
+  font-family: "dancing script";
 }

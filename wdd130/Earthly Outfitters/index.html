@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@350&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="content">
@@ -16,11 +16,12 @@
             <a href="index.html" id="logo_link">
                 <img src="images/logo.png" alt="EO Logo" class="logo">
             </a>
-            <nav>
+            <nav class="nav_bar">
                 <a href="index.html">Home</a>
                 <a href="site-plan.html">Site Plan</a>
-                <a href="buy-and-sell.html">Buy and Sell</a>
+                <a href="trade.html">Trade</a>
                 <a href="contact-us.html">Contact Us</a>
+            </nav>
         </header>
         <div id="hero">
             <div id="hero-box">
@@ -29,31 +30,84 @@
             <section id="hero-msg">
                 <h1 class="home-title">See Our Collection!</h1>
                 <div class="button-box">
-                    <a class="buy_button" href="buy-and-sell.html">Buy And Sell</a>
+                    <a class="trade_button" href="trade.html">Trade</a>
                 </div>
             </section>
         </div>
         <main class="home-grid">
+            <div class="main-msg">
+                <p>The fashion industry is responsible for 10 percent of our global emissions. This means that fast fabric producers like H&M, Target, Forever 21 and other major producers are harming our environment by the sheer amount of fabric they produce.</p>
+                <hr>
+                <p>Together we can eliminate the amount of fabric produced to help lower the damage the fashion industry has made on the Earth. Here at Earthly Outfitters, you can assist by buying clothing already worn rather than increasing the already large demand for clothing in our society. We ensure all our fabric is in a high or medium quality state, so it is still as if you are buying it brand new!</p>
+            </div>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="images/david-lezcano-NfZiOJzZgcg-unsplash.jpg">
+                    <div class="text">Find your style from our great selection of clothes!</div>
+                  </div>
+                
+                  <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/felix-rostig-UmV2wr-Vbq8-unsplash.jpg">
+                    <div class="text">Trading with us helps our habitat survive and provides you with your finest looks.</div>
+                  </div>
+                
+                  <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images/hunters-race-hNoSCxPWYII-unsplash.jpg">
+                    <div class="text">We ensure all of our clothes are of good quality and recycle those fabrics which are not.</div>
+                  </div>
+                
+                  <!-- Next and previous buttons -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
             <section class="types">
                 <div class="shirts-home">
-                    <img src="images/fernando-lavin-fi5YSQfxbVk-unsplash.jpg" alt="shirts">
-                    <h2>Tops</h2>
+                    <a href="trade.html"> 
+                        <img src="images/fernando-lavin-fi5YSQfxbVk-unsplash.jpg" alt="shirts">
+                    </a>
+                    <a href="trade.html">
+                        <h3>Tops</h3>
+                    </a>
                 </div>
                 <div class="pants-home">
-                    <img src="images/lucas-hoang-ojZ4wJNUM5w-unsplash.jpg" alt="pants">
-                    <h2>Pants</h2>
+                    <a href="trade.html"> 
+                        <img src="images/lucas-hoang-ojZ4wJNUM5w-unsplash.jpg" alt="pants">
+                    </a>
+                    <a href="trade.html">
+                        <h3>Bottoms</h3>
+                    </a>
                 </div>
+                
                 <div class="shoes-home">
-                    <img src="images/mitchel-lensink-1BI-ar91C7U-unsplash.jpg" alt="shoes">
-                    <h2>Shoes</h2>
+                    <a href="trade.html">
+                        <img src="images/mitchel-lensink-1BI-ar91C7U-unsplash.jpg" alt="shoes">
+                    </a>
+                    <a href="trade.html">
+                        <h3>Shoes</h3>
+                    </a>
                 </div>
                 <div class="accessories-home">
-                    <img src="images/jess-harper-sunday-bLkj9eNhW90-unsplash.jpg" alt="accessories">
-                    <h2>Accessories</h2>
+                    <a href="trade.html">
+                        <img src="images/jess-harper-sunday-bLkj9eNhW90-unsplash.jpg" alt="accessories">
+                    </a>
+                    <a href="trade.html">
+                        <h3>Accessories</h3>
+                    </a>
                 </div>
             </section>
             <section class="we_help">
-                <h1>We Help</h1>
+                <h2>We Help</h2>
                 <p>Along with our business, we also offer volunteer opportunities to help clean up the earth a bit in the Teton Idaho Wyoming area. During these outings we collect trash in our national parks and other nature reserves to benefit the fauna and flora. We partner up with local organizations to clean the Earth and invite individuals and other companies to make a pledge to make one step at a time towards a healthier planet. Here on our site, you can sign up to join others in our community who want to keep the planet clean and make a difference one step at a time. If you want to volunteer, use the “Join Us” box on our “Volunteer” section to join us on our next adventure. Fighting climate change is a process that is done community by community and this is how we are helping ours.</p>
                 <div class="button-box">
                     <a class="contact" href="contact-us.html"></a>
@@ -61,7 +115,10 @@
             </section>
         </main>
         <footer>
-            <h3>Earthly Outfitters &copy; 2022 - Spencer Callister</h3>
+            <div class="copy-right">
+                <h3>Earthly Outfitters &nbsp;</h3>
+                <h3>&copy; 2022 - Spencer Callister</h3>
+            </div>
             <h3><a href="site-plan.html">Site Plan</a></h3>
             <h3><a href="contact-us.html">Contact Us</a></h3>
             <div class="social">
@@ -77,5 +134,33 @@
             </div>
         </footer>
     </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
 </body>
 </html>
