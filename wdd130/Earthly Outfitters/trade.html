@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trade</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -14,14 +18,27 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="site-plan.html">Site Plan</a>
-            <a href="buy-and-sell.html">Buy and Sell</a>
+            <a href="buy-and-sell.html">Trade</a>
             <a href="contact-us.html">Contact Us</a>
     </header>
-    <main class="home-grid">
-        <section class="info">
-            <h1>Trade With Us!</h1>
-            <p>At Earthly Outfitters, we really want to bring you an affordable option for clothing. College students and young people in general, as well as people in older and younger age groups often cannot afford the high cost that retailers typically charge for their things. So we will help out! Our site will connect you with people who have an abundance of clothes and want to see their jackets, t-shirts, jeans, shoes, and other items get put to good use. Visit our “Buy” page to see all the great items we are offering! If you have clothes you wish to get rid of but are also looking for a source of income and feel like you are wasting perfectly good items, look to us to help you sell those and make you a bit of profit too! We offer direct transfers and store credit when you want to sell your things through our “Sell” page. Our business offers a recycling program as well which will take the clothing that we cannot except because of damage and wear and tear and reuse it for brand new clothes. When selling clothes to us, simply take a picture of your item’s front/back and inside, attach it to a message on our site’s messaging feature, and send it to us. From there, we will determine what it is worth and send you money for your clothes.</p>
-        </section>
+    <main class="home-grid2">            
+            <div class="bg-img">
+                <video autoplay muted loop id="myVideo">
+                    <source src="images/video.mp4" type="video/mp4">
+                </video>
+                <h1 class="trade-title">See Our Selection</h1>
+                <form action="/action_page.php" class="container">
+                  <h1>Login</h1>
+              
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required>
+              
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+              
+                  <button type="submit" class="btn">Login</button>
+                </form>
+            </div>    
         <section class="shop-gender">
             <div class="women">
                 <img src="images/denys-nevozhai-z0nVqfrOqWA-unsplash.jpg" alt="woman">
@@ -32,7 +49,7 @@
             <div class="men">
                 <img src="images/tim-bogdanov-4uojMEdcwI8-unsplash.jpg" alt="man">
                 <div class="button-box">
-                    <a class="man-button" href="#">Shop Men</a>
+                    <a class="men-button" href="#">Shop Men</a>
                 </div>
             </div>
         </section>
@@ -50,8 +67,10 @@
         </section>
     </main>
         <footer>
-            <h3>Earthly Outfitters &copy; 2022 - Spencer Callister</h3>
-            <h3><a href="site-plan.html">Site Plan</a></h3>
+            <div class="copy-right">
+                <h3>Earthly Outfitters &nbsp;</h3>
+                <h3>&copy; 2022 - Spencer Callister</h3>
+            </div>            <h3><a href="site-plan.html">Site Plan</a></h3>
             <h3><a href="contact-us.html">Contact Us</a></h3>
             <div class="social">
                 <a href="https://facebook.com" target="_blank">
