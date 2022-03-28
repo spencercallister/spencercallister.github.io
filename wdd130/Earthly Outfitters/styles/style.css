@@ -392,3 +392,9 @@ input[type=text]:focus, input[type=password]:focus {
   margin: 0px 1000px 120px 120px;
   padding: 5px 40px 40px 40px;
 }
+.sell h1{
+  font-family: "dancing script";
+}
+.sell p{
+  font-size: .8em;
+}
