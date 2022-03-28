@@ -329,7 +329,7 @@ input[type=text]:focus, input[type=password]:focus {
 }
 
 .shop-gender img{
-  border-radius: 15px;
+  border-radius: 20px;
 }
 .women{
   width: 90%;
@@ -389,7 +389,7 @@ input[type=text]:focus, input[type=password]:focus {
 .sell{
   background-color: #188B7D;
   color: #F4F1DE;
-  margin: 0px 1000px 120px 120px;
+  margin: 0px 1000px 0px 130px;
   padding: 5px 40px 40px 40px;
 }
 .sell h1{
