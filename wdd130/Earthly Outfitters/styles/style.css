@@ -268,7 +268,7 @@ video {
   width: 100%;
 }
 .trade-title{
-  grid-column: 2/3;
+  grid-column:2/4;
   grid-row:3/4;
   margin: auto;
   color: #188B7D;
@@ -282,7 +282,7 @@ video {
   margin: 50px 50px;
   padding: 16px;
   background-color: white;
-  grid-column: 3/4;
+  grid-column: 4/4;
   grid-row: 4/4;
   opacity: 80%;
   font-family: "open sans";
@@ -322,7 +322,6 @@ input[type=text]:focus, input[type=password]:focus {
 .shop-gender{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: #F4F1DE;
   position: relative;
   margin: 60px 80px;
   padding: 20px;
@@ -373,7 +372,6 @@ input[type=text]:focus, input[type=password]:focus {
   top:40px;
   right:80px;
   z-index: 1;
-  background-color: #;
 }
 .men-button{
   font-family: "dancing script";
@@ -387,4 +385,10 @@ input[type=text]:focus, input[type=password]:focus {
 }
 .men-button:hover{
   border: double #424B54;
+}
+.sell{
+  background-color: #188B7D;
+  color: #F4F1DE;
+  margin: 0px 1000px 120px 120px;
+  padding: 5px 40px 40px 40px;
 }
