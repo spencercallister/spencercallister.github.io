@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html" id="logo_link">
+            <img src="images/logo.png" alt="EO Logo" class="logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="site-plan.html">Site Plan</a>
+            <a href="buy-and-sell.html">Buy and Sell</a>
+            <a href="join-us.html">Join Us</a>
+    </header>
+    <main class="join_main">
+        
+        <section class="serve_info">
+            <div class="open_tabs">
+                <div class="tab">
+                    <button class="tablinks" onclick="openArea(event, 'idaho_falls')">Idaho Falls</button>
+                    <button class="tablinks" onclick="openArea(event, 'rexburg')">Rexburg</button>
+                    <button class="tablinks" onclick="openArea(event, 'jackson')">Jackson</button>
+                </div>
+                
+                <div id="idaho_falls" class="tabcontent">
+                    <h3>Idaho Falls</h3>
+                    <p>Visit our location in Idaho Falls on 154 Chamberlain Ave.</p>
+                    <img src="images/idaho falls location.jpg" id="if_store" alt="idaho falls store">
+                </div>
+                
+                <div id="rexburg" class="tabcontent">
+                    <h3>Rexburg</h3>
+                    <p>Check our collection out at 52 E Main St site!</p>
+                    <img src="images/rexburg location.jpg" id="rexburg_store" alt="rexburg store">
+                </div>
+                
+                <div id="jackson" class="tabcontent">
+                    <h3>Jackson</h3>
+                    <p>Come visit us at 265 S Millward St.</p>
+                    <img src="images/jackson location.jpg" id="jackson_store" alt="jackson store">
+                </div>
+            </div>
+        </section>
+        <section class="sign_up">
+            <form action="action_page.php">
+                <div class="container2">
+                  <h1>Register</h1>
+                  <p>Please fill in this form to create an account.</p>
+                  <hr>
+              
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" id="email" required>
+              
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+              
+                  <label for="psw-repeat"><b>Confirm Password</b></label>
+                  <input type="password" placeholder="Confirm Password" name="psw-repeat" id="psw-repeat" required>
+                  <hr>
+              
+                  <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                  <button type="submit" class="registerbtn">Register</button>
+                </div>
+              
+                <div class="container signin">
+                  <p>Already have an account? <a href="#">Sign in</a>.</p>
+                </div>
+              </form>
+        </section>
+
+    </main>
+    <footer>
+        <h3>Earthly Outfitters &copy; 2022 - Spencer Callister</h3>
+        <h3><a href="site-plan.html">Site Plan</a></h3>
+        <h3><a href="contact-us.html">Contact Us</a></h3>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+    <script>
+        function openArea(evt, areaName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the link that opened the tab
+        document.getElementById(areaName).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
