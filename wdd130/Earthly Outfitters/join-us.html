@@ -18,7 +18,7 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="site-plan.html">Site Plan</a>
-            <a href="buy-and-sell.html">Buy and Sell</a>
+            <a href="trade.html">Trade</a>
             <a href="join-us.html">Join Us</a>
     </header>
     <main class="join_main">
@@ -79,9 +79,12 @@
 
     </main>
     <footer>
-        <h3>Earthly Outfitters &copy; 2022 - Spencer Callister</h3>
+        <div class="copy-right">
+            <h3>Earthly Outfitters &nbsp;</h3>
+            <h3>&copy; 2022 - Spencer Callister</h3>
+        </div>
         <h3><a href="site-plan.html">Site Plan</a></h3>
-        <h3><a href="contact-us.html">Contact Us</a></h3>
+        <h3><a href="join-us.html">Join Us</a></h3>
         <div class="social">
             <a href="https://facebook.com" target="_blank">
                 <img src="images/facebook.png" alt="fb icon">
@@ -96,22 +99,15 @@
     </footer>
     <script>
         function openArea(evt, areaName) {
-        // Declare all variables
         var i, tabcontent, tablinks;
-
-        // Get all elements with class="tabcontent" and hide them
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
             tabcontent[i].style.display = "none";
         }
-
-        // Get all elements with class="tablinks" and remove the class "active"
         tablinks = document.getElementsByClassName("tablinks");
         for (i = 0; i < tablinks.length; i++) {
             tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
-
-        // Show the current tab, and add an "active" class to the link that opened the tab
         document.getElementById(areaName).style.display = "block";
         evt.currentTarget.className += " active";
         }
